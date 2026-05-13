@@ -1,0 +1,57 @@
+~$ bash torrent_search.sh "richard stallman"
+
+╔══════════════════════════════════════════════╗
+║   ⚡  The New Ares — Torrent Searcher         ║
+║   qBittorrent-nox + Jackett + mpv            ║
+╚══════════════════════════════════════════════╝
+   https://imlauera.github.io/post/el_nuevo_ares/
+
+┌──────────────────────────────────────────────┐
+│  ⚠  Configure Jackett before use             │
+│  1. Open http://localhost:9117               │
+│  2. Add indexer → select the ones you want   │
+│     (each indexer = a torrent source)        │
+│  3. Add selected → save API key in           │
+│     ~/.local/share/qBittorrent/nova3/        │
+│     engines/jackett.json                     │
+└──────────────────────────────────────────────┘
+
+
+─── Checking dependencies...
+[OK]      ✓ qbittorrent-nox
+[OK]      ✓ curl
+[OK]      ✓ jq
+[OK]      ✓ python3
+[OK]      ✓ jackett
+[OK]    qBittorrent-nox is already running.
+[INFO]  Logging into WebUI...
+[WARN]  Response: 'empty' (assuming active session).
+[INFO]  Starting Jackett...
+[OK]    Jackett available.
+[OK]    jackett.json OK.
+[OK]    API key OK.
+
+─── Searching for 'richard stallman'...
+[INFO]  Total results from Jackett: 220
+[INFO]  With magnet or link: 220
+[OK]    Found: 220 torrents with magnet link (out of 220 total)
+
+Results for: "richard stallman"  (page 1/15)
+─────────────────────────────────────────────────────────────────────────
+#    SEEDS   PEERS   SIZE      INDEXER        NAME
+─────────────────────────────────────────────────────────────────────────
+1    84      1       354539B    EBookBay       Free Software, Free Society - Richard M. Stallman
+2    25      0       459MB      OpenSharing    Summer Vixen - Richard Mann & Summer Vixen (2024) Si…
+3    20      0       459MB      torrent-pira   Summer Vixen - Richard Mann & Summer Vixen (2024) Si…
+4    15      4       881MB      LimeTorrents   Richard Stallman speaks on Free Software and Human r…
+5    15      4       881MB      TorrentDownl   Richard Stallman speaks on Free Software and Human r…
+6    10      0       2MB        LimeTorrents   [www progressivetorrents com]  Free Software Free So…
+7    10      0       2MB        TorrentDownl   [www progressivetorrents com]   Free Software Free S…
+8    6       6       2.6GB      OpenSharing    Matures et comblées / Mature and fulfilled / Зрелые …
+9    6       0       1MB        Torrents.csv   Stallman, Richard - Software libre para una sociedad…
+10   5       1       1MB        FileMood       Stallman Richard Software libre para una sociedad li…
+11   5       0       1MB        Torrents.csv   Stallman, Richard - Software libre para una sociedad…
+12   4       0       1MB        FileMood       Stallman Richard Software libre para una sociedad li…
+13   4       0       522MB      torrent-pira   Erin Everheart - Richard Mann & Erin Everheart (2023…
+14   4       0       286771B    Torrent Down   CodiceLibero - Richard Stallman rar
+15   4       2       295MB      TorrentProje   Hackers.Wizards.of.the.Electronic.Age.1984.AMZN.WEBR…   
